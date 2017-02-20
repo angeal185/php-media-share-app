@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2017 at 11:26 PM
+-- Generation Time: Feb 20, 2017 at 11:51 PM
 -- Server version: 5.7.9
 -- PHP Version: 5.6.16
 
@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `ms_log` (
   `ip` varchar(20) NOT NULL,
   `date` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `ms_log`
@@ -151,7 +151,8 @@ INSERT INTO `ms_log` (`id`, `user_id`, `log`, `ip`, `date`) VALUES
 (48, 1, 'Login to account.', '::1', 1487538811),
 (49, 1, 'Login to account.', '::1', 1487600010),
 (50, 1, 'Logout from account.', '::1', 1487604279),
-(51, 1, 'Login to account.', '::1', 1487604364);
+(51, 1, 'Login to account.', '::1', 1487604364),
+(52, 1, 'Logout from account.', '::1', 1487604520);
 
 -- --------------------------------------------------------
 
@@ -198,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `ms_users` (
 --
 
 INSERT INTO `ms_users` (`id`, `username`, `password`, `profile`, `cover`, `email`, `FirstName`, `LastName`, `hash`, `date`) VALUES
-(1, 'admin', 'dce709a8e67f8556abc6999c44de0bd7', 'default.png', 'default.png', 'administrator@videoshare.com', 'Administrator', 'Administrator', NULL, 0);
+(1, 'admin', 'dce709a8e67f8556abc6999c44de0bd7', 'default.png', 'default.png', 'admin@admin.com', 'Administrator', 'Administrator', NULL, 0);
 
 -- --------------------------------------------------------
 
